@@ -818,10 +818,28 @@ header nav .form i {
 }
 
 .our-skills .skills .prog-holder .prog span {
-  display: block;
   background-color: var(--main-color);
   height: 100%;
   position: relative;
+  display: block;
+  transition: 1.3s ease-in;
+  width: 0;
+}
+
+.our-skills .skills .prog-holder .prog span.width {
+  width: 90%;
+}
+
+.our-skills .skills .prog-holder .prog #progBar-2.width {
+  width: 85%;
+}
+
+.our-skills .skills .prog-holder .prog #progBar-3.width {
+  width: 80%;
+}
+
+.our-skills .skills .prog-holder .prog #progBar-4.width {
+  width: 90%;
 }
 
 .our-skills .skills .prog-holder .prog span::before {
