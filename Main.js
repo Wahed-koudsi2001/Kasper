@@ -156,10 +156,28 @@ let header = document.getElementById('header');
 
 let upBtn = document.querySelector('.up');
 
+let progBar = document.getElementById('progBar');
+
+let progBar2 = document.getElementById('progBar-2');
+
+let progBar3 = document.getElementById('progBar-3');
+
+let progBar4 = document.getElementById('progBar-4');
+
+
 window.onscroll = function () {
     this.scrollY >= 600 ? upBtn.classList.add('show') : upBtn.classList.remove('show');
 
     this.scrollY >= 600 ? header.classList.add('show') : header.classList.remove('show');
+
+    this.scrollY >= 5000 ? progBar.classList.add('width') : progBar.classList.remove('width');
+
+    this.scrollY >= 5000 ? progBar2.classList.add('width') : progBar2.classList.remove('width');
+
+    this.scrollY >= 5000 ? progBar3.classList.add('width') : progBar3.classList.remove('width');
+
+    this.scrollY >= 5000 ? progBar4.classList.add('width') : progBar4.classList.remove('width');
+
 }
 upBtn.onclick = function () {
     window.scrollTo({
